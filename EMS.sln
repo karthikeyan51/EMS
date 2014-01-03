@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8A4D642E-824A-4D58-BD56-648CC30C8F17}") = "EMS", "EMS\EMS.ls3proj", "{1EB0FF54-B030-4CA4-A464-0838295709D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{1B487F35-17AF-43AB-9C0A-D115E4FB9101}.0 = {5084B1DE-596A-4750-A0B8-976F6D1D472E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EB0FF54-B030-4CA4-A464-0838295709D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB0FF54-B030-4CA4-A464-0838295709D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB0FF54-B030-4CA4-A464-0838295709D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB0FF54-B030-4CA4-A464-0838295709D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5084B1DE-596A-4750-A0B8-976F6D1D472E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5084B1DE-596A-4750-A0B8-976F6D1D472E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5084B1DE-596A-4750-A0B8-976F6D1D472E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5084B1DE-596A-4750-A0B8-976F6D1D472E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B487F35-17AF-43AB-9C0A-D115E4FB9101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B487F35-17AF-43AB-9C0A-D115E4FB9101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B487F35-17AF-43AB-9C0A-D115E4FB9101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B487F35-17AF-43AB-9C0A-D115E4FB9101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
