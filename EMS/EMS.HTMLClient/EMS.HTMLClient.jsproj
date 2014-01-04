@@ -76,7 +76,11 @@
     <Content Include="Scripts\msls-1.0.0.min.js" />
     <Content Include="Scripts\winjs-1.0.js" />
     <Content Include="Scripts\winjs-1.0.min.js" />
+    <Content Include="UserCode\AddEditAcademicYearSetup.js" />
+    <Content Include="UserCode\AddEditBloodGroup.js" />
+    <Content Include="UserCode\AddEditCity.js" />
     <Content Include="UserCode\AddEditCountry.js" />
+    <Content Include="UserCode\AddEditState.js" />
   </ItemGroup>
   <ItemGroup>
     <ServiceMetadataReference Include="..\EMS.Server\EMS.Server.csproj">
