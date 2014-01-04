@@ -76,87 +76,133 @@ namespace LightSwitchApplication
         {
             entity.UpdateDate = DateTime.Now;
             entity.UpdateUser = Application.User.Name;
-            string name = Application.User.Name;
+            
         }
 
         partial void Religions_Inserting(Religion entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Religions_Updating(Religion entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Nationalities_Inserting(Nationality entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Nationalities_Updating(Nationality entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void MotherTongues_Inserting(MotherTongue entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void MotherTongues_Updating(MotherTongue entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void BloodGroups_Inserting(BloodGroup entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void BloodGroups_Updating(BloodGroup entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Castes_Inserting(Caste entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Castes_Updating(Caste entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void ReservationCategories_Inserting(ReservationCategory entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void ReservationCategories_Updating(ReservationCategory entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Occupations_Inserting(Occupation entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
         partial void Occupations_Updating(Occupation entity)
         {
-
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
-        partial void GameHouses_Inserting(GameHous entity)
+        partial void GameHouses_Inserting(GameHouse entity)
         {
-
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
 
-        partial void GameHouses_Updating(GameHous entity)
+        partial void GameHouses_Updating(GameHouse entity)
         {
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
+        }
 
+        partial void RelievingTypes_Inserting(RelievingType entity)
+        {
+            entity.InsertDate = DateTime.Now;
+            entity.InsertUser = Application.User.Name;
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
+        }
+
+        partial void RelievingTypes_Updating(RelievingType entity)
+        {
+            entity.UpdateDate = DateTime.Now;
+            entity.UpdateUser = Application.User.Name;
         }
     }
 }

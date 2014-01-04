@@ -201,6 +201,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserCode\EMSDataService.cs" />
     <Compile Include="UserCode\Shared\Country.cs" />
+    <Compile Include="UserCode\Shared\Occupation.cs" />
+    <Compile Include="UserCode\Shared\Religion.cs" />
   </ItemGroup>
   <ItemGroup>
     <LightSwitchModel Include="Properties\Service.lsml">

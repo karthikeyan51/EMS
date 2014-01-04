@@ -248,7 +248,7 @@
       CanDelete="True"
       CanInsert="True"
       CanUpdate="True"
-      EntityType="GameHous" />
+      EntityType="GameHouse" />
     <EntitySet
       Name="MotherTongues"
       CanDelete="True"
@@ -893,7 +893,7 @@
     </QueryOperation>
     <QueryOperation
       Name="GameHouses_Single"
-      ReturnType="GameHous">
+      ReturnType="GameHouse">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -933,7 +933,7 @@
     </QueryOperation>
     <QueryOperation
       Name="GameHouses_SingleOrDefault"
-      ReturnType="GameHous">
+      ReturnType="GameHouse">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -1578,6 +1578,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1586,6 +1587,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1596,6 +1598,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1604,6 +1607,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1659,6 +1663,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1667,6 +1672,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1677,6 +1683,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -1685,6 +1692,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2144,6 +2152,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2152,6 +2161,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2162,6 +2172,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2170,6 +2181,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
@@ -2376,7 +2388,7 @@
     </EntityType.Properties>
   </EntityType>
   <EntityType
-    Name="GameHous">
+    Name="GameHouse">
     <EntityType.Methods>
       <EntityMethod
         Name="Delete">
@@ -2406,6 +2418,15 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+          <Hidden />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="InsertDate"
         PropertyType=":DateTime?">
         <EntityProperty.Attributes>
@@ -2413,14 +2434,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
-        Name="InsertUser"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <MaxLength
-            Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2431,6 +2445,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2439,6 +2454,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2487,6 +2503,15 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+          <Hidden />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="InsertDate"
         PropertyType=":DateTime?">
         <EntityProperty.Attributes>
@@ -2494,14 +2519,16 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
-        Name="InsertUser"
+        Name="UpdateUser"
         PropertyType=":String?">
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2512,14 +2539,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
-        Name="UpdateUser"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <MaxLength
-            Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2575,6 +2595,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2583,6 +2604,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2593,6 +2615,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2601,6 +2624,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2656,6 +2680,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2664,6 +2689,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2674,6 +2700,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2682,6 +2709,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2737,6 +2765,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2745,6 +2774,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2755,6 +2785,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2763,6 +2794,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -3635,41 +3667,41 @@
           Nullable="False"
           StoreGeneratedPattern="Identity"
           Type="int"
-          Property="GameHous/Properties[Id]" />
+          Property="GameHouse/Properties[Id]" />
         <SsdlProperty
           MaxLength="255"
           Name="GameHouseName"
           Nullable="False"
           Type="nvarchar"
-          Property="GameHous/Properties[GameHouseName]" />
+          Property="GameHouse/Properties[GameHouseName]" />
         <SsdlProperty
           Name="InsertDate"
           Nullable="True"
           Type="datetime"
-          Property="GameHous/Properties[InsertDate]" />
+          Property="GameHouse/Properties[InsertDate]" />
         <SsdlProperty
           MaxLength="255"
           Name="InsertUser"
           Nullable="True"
           Type="nvarchar"
-          Property="GameHous/Properties[InsertUser]" />
+          Property="GameHouse/Properties[InsertUser]" />
         <SsdlProperty
           Name="UpdateDate"
           Nullable="True"
           Type="datetime"
-          Property="GameHous/Properties[UpdateDate]" />
+          Property="GameHouse/Properties[UpdateDate]" />
         <SsdlProperty
           MaxLength="255"
           Name="UpdateUser"
           Nullable="True"
           Type="nvarchar"
-          Property="GameHous/Properties[UpdateUser]" />
+          Property="GameHouse/Properties[UpdateUser]" />
         <SsdlProperty
           Name="RowVersion"
           Nullable="True"
           StoreGeneratedPattern="Computed"
           Type="timestamp"
-          Property="GameHous/Properties[RowVersion]" />
+          Property="GameHouse/Properties[RowVersion]" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
     <EntitySetMapping

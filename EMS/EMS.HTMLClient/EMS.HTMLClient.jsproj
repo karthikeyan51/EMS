@@ -79,7 +79,16 @@
     <Content Include="UserCode\AddEditAcademicYearSetup.js" />
     <Content Include="UserCode\AddEditBloodGroup.js" />
     <Content Include="UserCode\AddEditCity.js" />
+    <Content Include="UserCode\AddEditClassMaster.js" />
     <Content Include="UserCode\AddEditCountry.js" />
+    <Content Include="UserCode\AddEditDivisionMaster.js" />
+    <Content Include="UserCode\AddEditDocument.js" />
+    <Content Include="UserCode\AddEditGameHouse.js" />
+    <Content Include="UserCode\AddEditMotherTongue.js" />
+    <Content Include="UserCode\AddEditNationality.js" />
+    <Content Include="UserCode\AddEditOccupation.js" />
+    <Content Include="UserCode\AddEditRelievingType.js" />
+    <Content Include="UserCode\AddEditReligion.js" />
     <Content Include="UserCode\AddEditState.js" />
   </ItemGroup>
   <ItemGroup>
