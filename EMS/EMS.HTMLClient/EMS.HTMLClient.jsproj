@@ -89,6 +89,8 @@
     <Content Include="UserCode\AddEditOccupation.js" />
     <Content Include="UserCode\AddEditRelievingType.js" />
     <Content Include="UserCode\AddEditReligion.js" />
+    <Content Include="UserCode\AddEditReservationCategory.js" />
+    <Content Include="UserCode\AddEditSchoolSetup.js" />
     <Content Include="UserCode\AddEditState.js" />
   </ItemGroup>
   <ItemGroup>

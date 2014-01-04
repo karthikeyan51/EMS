@@ -2850,6 +2850,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2858,6 +2859,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2868,6 +2870,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -2876,6 +2879,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -3003,6 +3007,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -3011,6 +3016,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -3021,6 +3027,7 @@
             Precision="3"
             PreserveSeconds="True" />
           <NotSearchable />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -3029,6 +3036,7 @@
         <EntityProperty.Attributes>
           <MaxLength
             Value="255" />
+          <Hidden />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
