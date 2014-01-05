@@ -1531,6 +1531,718 @@
         </QueryOperationParameter.Attributes>
       </QueryOperationParameter>
     </QueryOperation>
+    <EntitySet
+      Name="ExitOptions"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="ExitOption" />
+    <EntitySet
+      Name="MonthMasters"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="MonthMaster" />
+    <EntitySet
+      Name="Options"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="c_Option" />
+    <EntitySet
+      Name="Students"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="Student" />
+    <EntitySet
+      Name="StudentClassDivisions"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="StudentClassDivision" />
+    <EntitySet
+      Name="StudentDocuments"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="StudentDocument" />
+    <EntitySet
+      Name="StudentsBrotherSisters"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="StudentsBrotherSister" />
+    <QueryOperation
+      Name="ExitOptions_Single"
+      ReturnType="ExitOption">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ExitOptions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="ExitOptions_SingleOrDefault"
+      ReturnType="ExitOption">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ExitOptions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="MonthMasters_Single"
+      ReturnType="MonthMaster">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="MonthMasters" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="MonthMasters_SingleOrDefault"
+      ReturnType="MonthMaster">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="MonthMasters" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Options_Single"
+      ReturnType="c_Option">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Options" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Options_SingleOrDefault"
+      ReturnType="c_Option">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Options" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Students_Single"
+      ReturnType="Student">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Students" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Students_SingleOrDefault"
+      ReturnType="Student">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Students" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentClassDivisions_Single"
+      ReturnType="StudentClassDivision">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentClassDivisions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentClassDivisions_SingleOrDefault"
+      ReturnType="StudentClassDivision">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentClassDivisions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentDocuments_Single"
+      ReturnType="StudentDocument">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentDocuments" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentDocuments_SingleOrDefault"
+      ReturnType="StudentDocument">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentDocuments" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentsBrotherSisters_Single"
+      ReturnType="StudentsBrotherSister">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentsBrotherSisters" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="StudentsBrotherSisters_SingleOrDefault"
+      ReturnType="StudentsBrotherSister">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="StudentsBrotherSisters" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="ID"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="Student_BloodGroups"
+      Association="Student_BloodGroup">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="BloodGroup"
+        EntitySet="BloodGroups" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_Nationalities"
+      Association="Student_Nationality">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="Nationality"
+        EntitySet="Nationalities" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_MotherTongues"
+      Association="Student_MotherTongue">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="MotherTongue"
+        EntitySet="MotherTongues" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_Religions"
+      Association="Student_Religion">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="Religion"
+        EntitySet="Religions" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_Castes"
+      Association="Student_Caste">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="Caste"
+        EntitySet="Castes" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_ReservationCategories"
+      Association="Student_ReservationCategory">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="ReservationCategory"
+        EntitySet="ReservationCategories" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_ClassMasters"
+      Association="Student_ClassMaster">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="ClassMaster"
+        EntitySet="ClassMasters" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_ClassMaster1Set"
+      Association="Student_ClassMaster1">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="ClassMaster"
+        EntitySet="ClassMasters" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_Cities"
+      Association="Student_City">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="City"
+        EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_City1Set"
+      Association="Student_City1">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="City"
+        EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet
+      Name="Student_Occupations"
+      Association="Student_Occupation">
+      <AssociationSetEnd
+        Name="Student"
+        EntitySet="Students" />
+      <AssociationSetEnd
+        Name="Occupation"
+        EntitySet="Occupations" />
+    </AssociationSet>
   </EntityContainer>
   <GlobalAttributeGroup
     Name="LightSwitchServiceApplicationGroup">
@@ -1917,6 +2629,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_BloodGroup"
+        FromEnd="BloodGroup"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -1998,6 +2715,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_Caste"
+        FromEnd="Caste"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2089,6 +2811,16 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_City"
+        FromEnd="City"
+        ToEnd="Student" />
+      <NavigationProperty
+        Name="Students1"
+        Association="Student_City1"
+        FromEnd="City"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2202,6 +2934,16 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_ClassMaster"
+        FromEnd="ClassMaster"
+        ToEnd="Student" />
+      <NavigationProperty
+        Name="Students1"
+        Association="Student_ClassMaster1"
+        FromEnd="ClassMaster"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2555,6 +3297,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_MotherTongue"
+        FromEnd="MotherTongue"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2640,6 +3387,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_Nationality"
+        FromEnd="Nationality"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2725,6 +3477,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_Occupation"
+        FromEnd="Occupation"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2810,6 +3567,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_Religion"
+        FromEnd="Religion"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -2895,6 +3657,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="Students"
+        Association="Student_ReservationCategory"
+        FromEnd="ReservationCategory"
+        ToEnd="Student" />
     </EntityType.Properties>
   </EntityType>
   <EntityType
@@ -3210,6 +3977,1240 @@
       Multiplicity="Many"
       EntityType="State" />
   </Association>
+  <EntityType
+    Name="ExitOption">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="ExitOption1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="1" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Usercode"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="MonthMaster">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="MonthCode"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MonthName"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MonthShortName"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="3" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Title"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="6" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        IsReadOnly="True"
+        PropertyType=":RowVersion?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <UseForConcurrency />
+          <MaxLength
+            IsFixedLength="True"
+            Value="8" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="c_Option">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="AutoGeneration"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DateOfBirthSetting"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GenderOption"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="Student">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="ClassCategoryCode"
+        PropertyType=":Int16">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AdmissionNo"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OptionalAdmissionNo"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StudentName"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AdmissionDate"
+        PropertyType=":DateTime">
+        <EntityProperty.Attributes>
+          <Required />
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DOB"
+        PropertyType=":DateTime">
+        <EntityProperty.Attributes>
+          <Required />
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Gender"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+          <SupportedValue
+            DisplayName="Male"
+            Value="M" />
+          <SupportedValue
+            DisplayName="Female"
+            Value="F" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Identification1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Identification2"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FatherName"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MotherName"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GuardianName"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GRNNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="EmergencyContact"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="BloodGroupCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="NationalityCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MotherTongueCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReligionCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CasteCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReservationCategoryCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AdmittedClassCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CurrentClassCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="HostelRequired"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+          <SupportedValue
+            DisplayName="NO"
+            Value="N" />
+          <SupportedValue
+            DisplayName="YES"
+            Value="Y" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SchoolBusRequired"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+          <SupportedValue
+            DisplayName="NO"
+            Value="N" />
+          <SupportedValue
+            DisplayName="YES"
+            Value="Y" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PhysicallyChallenged"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+          <SupportedValue
+            DisplayName="NO"
+            Value="N" />
+          <SupportedValue
+            DisplayName="YES"
+            Value="Y" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PAddress1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PAddress2"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PCityCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PPinCode"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PPhoneNos"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CAddress1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CAddress2"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CCityCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CPinCode"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CPhoneNos"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FQualification"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FOccupationCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FPhoneNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FEmailId"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MQualification"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MOccupationCode"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MPhoneNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MEmailId"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FamilyAnnualIncome"
+        PropertyType=":Decimal?">
+        <EntityProperty.Attributes>
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GAddress1"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GAddress2"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GCityCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GPinCode"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GPhoneNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GEmailId"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSName"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSAddress"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSLastStudiedClass"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSLastStudiedYear"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="10" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSTCNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="25" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSTCDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PSReasonForLeaving"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RelievingDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RelievingReason"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TCNoPrefix"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="15" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TCNo"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TCDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RClassCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RUserCode"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RInsertDateTime"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AcademicYearCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RelievingTypeCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SpecialInstruction"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ConductAndCharacter"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        IsReadOnly="True"
+        PropertyType=":RowVersion?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <UseForConcurrency />
+          <MaxLength
+            IsFixedLength="True"
+            Value="8" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="BloodGroup"
+        Association="Student_BloodGroup"
+        FromEnd="Student"
+        ToEnd="BloodGroup" />
+      <NavigationProperty
+        Name="Nationality"
+        Association="Student_Nationality"
+        FromEnd="Student"
+        ToEnd="Nationality" />
+      <NavigationProperty
+        Name="MotherTongue"
+        Association="Student_MotherTongue"
+        FromEnd="Student"
+        ToEnd="MotherTongue" />
+      <NavigationProperty
+        Name="Religion"
+        Association="Student_Religion"
+        FromEnd="Student"
+        ToEnd="Religion" />
+      <NavigationProperty
+        Name="Caste"
+        Association="Student_Caste"
+        FromEnd="Student"
+        ToEnd="Caste" />
+      <NavigationProperty
+        Name="ReservationCategory"
+        Association="Student_ReservationCategory"
+        FromEnd="Student"
+        ToEnd="ReservationCategory" />
+      <NavigationProperty
+        Name="AdmittedClass"
+        Association="Student_ClassMaster"
+        FromEnd="Student"
+        ToEnd="ClassMaster" />
+      <NavigationProperty
+        Name="CurrentClass"
+        Association="Student_ClassMaster1"
+        FromEnd="Student"
+        ToEnd="ClassMaster" />
+      <NavigationProperty
+        Name="City"
+        Association="Student_City"
+        FromEnd="Student"
+        ToEnd="City" />
+      <NavigationProperty
+        Name="City1"
+        Association="Student_City1"
+        FromEnd="Student"
+        ToEnd="City" />
+      <NavigationProperty
+        Name="Occupation"
+        Association="Student_Occupation"
+        FromEnd="Student"
+        ToEnd="Occupation" />
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="StudentClassDivision">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="AcademicYearCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ClassCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DivisionCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GamesHouseCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Status"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        IsReadOnly="True"
+        PropertyType=":RowVersion?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <UseForConcurrency />
+          <MaxLength
+            IsFixedLength="True"
+            Value="8" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StudentId"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="StudentDocument">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="DocumentCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GSlno"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DReturnedSatus"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="1" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        IsReadOnly="True"
+        PropertyType=":RowVersion?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <UseForConcurrency />
+          <MaxLength
+            IsFixedLength="True"
+            Value="8" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StudentId"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="StudentsBrotherSister">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="BrotherSisterStudentCode"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GSlno"
+        PropertyType=":Int32">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InsertUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateDate"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UpdateUser"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        IsReadOnly="True"
+        PropertyType=":RowVersion?">
+        <EntityProperty.Attributes>
+          <Hidden />
+          <UseForConcurrency />
+          <MaxLength
+            IsFixedLength="True"
+            Value="8" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="StudentId"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
   <DataService
     Name="EMSDataDataService"
     DataProvider="EntityFrameworkDataProvider"
@@ -3665,6 +5666,31 @@
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
     <EntitySetMapping
+      EntitySet="ExitOptions">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="ExitOption" />
+        <SsdlProperty
+          Name="Id"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="ExitOption/Properties[Id]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="ExitOption"
+          Nullable="True"
+          Type="nvarchar"
+          Property="ExitOption/Properties[ExitOption1]" />
+        <SsdlProperty
+          Name="Usercode"
+          Nullable="True"
+          Type="int"
+          Property="ExitOption/Properties[Usercode]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
       EntitySet="GameHouses">
       <EntitySetMapping.Attributes>
         <SsdlEntitySet
@@ -3710,6 +5736,71 @@
           StoreGeneratedPattern="Computed"
           Type="timestamp"
           Property="GameHouse/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="MonthMasters">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="MonthMaster" />
+        <SsdlProperty
+          Name="ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="MonthMaster/Properties[ID]" />
+        <SsdlProperty
+          Name="MonthCode"
+          Nullable="True"
+          Type="int"
+          Property="MonthMaster/Properties[MonthCode]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="MonthName"
+          Nullable="False"
+          Type="nvarchar"
+          Property="MonthMaster/Properties[MonthName]" />
+        <SsdlProperty
+          MaxLength="3"
+          Name="MonthShortName"
+          Nullable="False"
+          Type="nvarchar"
+          Property="MonthMaster/Properties[MonthShortName]" />
+        <SsdlProperty
+          MaxLength="6"
+          Name="Title"
+          Nullable="True"
+          Type="nvarchar"
+          Property="MonthMaster/Properties[Title]" />
+        <SsdlProperty
+          Name="InsertDate"
+          Nullable="True"
+          Type="datetime"
+          Property="MonthMaster/Properties[InsertDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="InsertUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="MonthMaster/Properties[InsertUser]" />
+        <SsdlProperty
+          Name="UpdateDate"
+          Nullable="True"
+          Type="datetime"
+          Property="MonthMaster/Properties[UpdateDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="UpdateUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="MonthMaster/Properties[UpdateUser]" />
+        <SsdlProperty
+          Name="RowVersion"
+          Nullable="True"
+          StoreGeneratedPattern="Computed"
+          Type="timestamp"
+          Property="MonthMaster/Properties[RowVersion]" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
     <EntitySetMapping
@@ -3854,6 +5945,37 @@
           StoreGeneratedPattern="Computed"
           Type="timestamp"
           Property="Occupation/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Options">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Options" />
+        <SsdlProperty
+          Name="Id"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="c_Option/Properties[Id]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="AutoGeneration"
+          Nullable="False"
+          Type="nvarchar"
+          Property="c_Option/Properties[AutoGeneration]" />
+        <SsdlProperty
+          Name="DateOfBirthSetting"
+          Nullable="True"
+          Type="datetime"
+          Property="c_Option/Properties[DateOfBirthSetting]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="GenderOption"
+          Nullable="False"
+          Type="nvarchar"
+          Property="c_Option/Properties[GenderOption]" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
     <EntitySetMapping
@@ -4160,6 +6282,628 @@
           PropertyName="State_Country" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Students">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Student" />
+        <SsdlProperty
+          Name="ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="Student/Properties[ID]" />
+        <SsdlProperty
+          Name="ClassCategoryCode"
+          Nullable="False"
+          Type="smallint"
+          Property="Student/Properties[ClassCategoryCode]" />
+        <SsdlProperty
+          Name="AdmissionNo"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[AdmissionNo]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="OptionalAdmissionNo"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[OptionalAdmissionNo]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="StudentName"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[StudentName]" />
+        <SsdlProperty
+          Name="AdmissionDate"
+          Nullable="False"
+          Type="datetime"
+          Property="Student/Properties[AdmissionDate]" />
+        <SsdlProperty
+          Name="DOB"
+          Nullable="False"
+          Type="datetime"
+          Property="Student/Properties[DOB]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="Gender"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[Gender]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="Identification1"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[Identification1]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="Identification2"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[Identification2]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="FatherName"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[FatherName]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="MotherName"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[MotherName]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="GuardianName"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GuardianName]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="GRNNo"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GRNNo]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="EmergencyContact"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[EmergencyContact]" />
+        <SsdlProperty
+          Name="BloodGroupCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[BloodGroupCode]" />
+        <SsdlProperty
+          Name="NationalityCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[NationalityCode]" />
+        <SsdlProperty
+          Name="MotherTongueCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[MotherTongueCode]" />
+        <SsdlProperty
+          Name="ReligionCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[ReligionCode]" />
+        <SsdlProperty
+          Name="CasteCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[CasteCode]" />
+        <SsdlProperty
+          Name="ReservationCategoryCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[ReservationCategoryCode]" />
+        <SsdlProperty
+          Name="AdmittedClassCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[AdmittedClassCode]" />
+        <SsdlProperty
+          Name="CurrentClassCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[CurrentClassCode]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="HostelRequired"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[HostelRequired]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="SchoolBusRequired"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[SchoolBusRequired]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="PhysicallyChallenged"
+          Nullable="False"
+          Type="nvarchar"
+          Property="Student/Properties[PhysicallyChallenged]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="PAddress1"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PAddress1]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="PAddress2"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PAddress2]" />
+        <SsdlProperty
+          Name="PCityCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[PCityCode]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="PPinCode"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PPinCode]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="PPhoneNos"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PPhoneNos]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="CAddress1"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[CAddress1]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="CAddress2"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[CAddress2]" />
+        <SsdlProperty
+          Name="CCityCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[CCityCode]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="CPinCode"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[CPinCode]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="CPhoneNos"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[CPhoneNos]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="FQualification"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[FQualification]" />
+        <SsdlProperty
+          Name="FOccupationCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[FOccupationCode]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="FPhoneNo"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[FPhoneNo]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="FEmailId"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[FEmailId]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="MQualification"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[MQualification]" />
+        <SsdlProperty
+          Name="MOccupationCode"
+          Nullable="True"
+          Type="int"
+          Property="Student/Properties[MOccupationCode]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="MPhoneNo"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[MPhoneNo]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="MEmailId"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[MEmailId]" />
+        <SsdlProperty
+          Name="FamilyAnnualIncome"
+          Nullable="True"
+          Scale="2"
+          Type="decimal"
+          Property="Student/Properties[FamilyAnnualIncome]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="GAddress1"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GAddress1]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="GAddress2"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GAddress2]" />
+        <SsdlProperty
+          Name="GCityCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[GCityCode]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="GPinCode"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GPinCode]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="GPhoneNo"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GPhoneNo]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="GEmailId"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[GEmailId]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="PSName"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSName]" />
+        <SsdlProperty
+          MaxLength="255"
+          Name="PSAddress"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSAddress]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="PSLastStudiedClass"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSLastStudiedClass]" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="PSLastStudiedYear"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSLastStudiedYear]" />
+        <SsdlProperty
+          MaxLength="25"
+          Name="PSTCNo"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSTCNo]" />
+        <SsdlProperty
+          Name="PSTCDate"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[PSTCDate]" />
+        <SsdlProperty
+          MaxLength="255"
+          Name="PSReasonForLeaving"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[PSReasonForLeaving]" />
+        <SsdlProperty
+          Name="RelievingDate"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[RelievingDate]" />
+        <SsdlProperty
+          MaxLength="255"
+          Name="RelievingReason"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[RelievingReason]" />
+        <SsdlProperty
+          MaxLength="15"
+          Name="TCNoPrefix"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[TCNoPrefix]" />
+        <SsdlProperty
+          Name="TCNo"
+          Nullable="True"
+          Type="int"
+          Property="Student/Properties[TCNo]" />
+        <SsdlProperty
+          Name="TCDate"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[TCDate]" />
+        <SsdlProperty
+          Name="RClassCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[RClassCode]" />
+        <SsdlProperty
+          Name="RUserCode"
+          Nullable="True"
+          Type="int"
+          Property="Student/Properties[RUserCode]" />
+        <SsdlProperty
+          Name="RInsertDateTime"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[RInsertDateTime]" />
+        <SsdlProperty
+          Name="AcademicYearCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[AcademicYearCode]" />
+        <SsdlProperty
+          Name="RelievingTypeCode"
+          Nullable="False"
+          Type="int"
+          Property="Student/Properties[RelievingTypeCode]" />
+        <SsdlProperty
+          Name="SpecialInstruction"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Student/Properties[SpecialInstruction]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="ConductAndCharacter"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[ConductAndCharacter]" />
+        <SsdlProperty
+          Name="InsertDate"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[InsertDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="InsertUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[InsertUser]" />
+        <SsdlProperty
+          Name="UpdateDate"
+          Nullable="True"
+          Type="datetime"
+          Property="Student/Properties[UpdateDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="UpdateUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="Student/Properties[UpdateUser]" />
+        <SsdlProperty
+          Name="RowVersion"
+          Nullable="True"
+          StoreGeneratedPattern="Computed"
+          Type="timestamp"
+          Property="Student/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="StudentClassDivisions">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="StudentClassDivision" />
+        <SsdlProperty
+          Name="ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="StudentClassDivision/Properties[ID]" />
+        <SsdlProperty
+          Name="StudentId"
+          Nullable="True"
+          Type="int"
+          Property="StudentClassDivision/Properties[StudentId]" />
+        <SsdlProperty
+          Name="AcademicYearCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentClassDivision/Properties[AcademicYearCode]" />
+        <SsdlProperty
+          Name="ClassCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentClassDivision/Properties[ClassCode]" />
+        <SsdlProperty
+          Name="DivisionCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentClassDivision/Properties[DivisionCode]" />
+        <SsdlProperty
+          Name="GamesHouseCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentClassDivision/Properties[GamesHouseCode]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="Status"
+          Nullable="False"
+          Type="nvarchar"
+          Property="StudentClassDivision/Properties[Status]" />
+        <SsdlProperty
+          Name="InsertDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentClassDivision/Properties[InsertDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="InsertUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentClassDivision/Properties[InsertUser]" />
+        <SsdlProperty
+          Name="UpdateDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentClassDivision/Properties[UpdateDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="UpdateUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentClassDivision/Properties[UpdateUser]" />
+        <SsdlProperty
+          Name="RowVersion"
+          Nullable="True"
+          StoreGeneratedPattern="Computed"
+          Type="timestamp"
+          Property="StudentClassDivision/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="StudentDocuments">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="StudentDocuments" />
+        <SsdlProperty
+          Name="ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="StudentDocument/Properties[ID]" />
+        <SsdlProperty
+          Name="StudentId"
+          Nullable="True"
+          Type="int"
+          Property="StudentDocument/Properties[StudentId]" />
+        <SsdlProperty
+          Name="DocumentCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentDocument/Properties[DocumentCode]" />
+        <SsdlProperty
+          Name="GSlno"
+          Nullable="False"
+          Type="int"
+          Property="StudentDocument/Properties[GSlno]" />
+        <SsdlProperty
+          MaxLength="1"
+          Name="DReturnedSatus"
+          Nullable="False"
+          Type="nvarchar"
+          Property="StudentDocument/Properties[DReturnedSatus]" />
+        <SsdlProperty
+          Name="InsertDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentDocument/Properties[InsertDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="InsertUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentDocument/Properties[InsertUser]" />
+        <SsdlProperty
+          Name="UpdateDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentDocument/Properties[UpdateDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="UpdateUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentDocument/Properties[UpdateUser]" />
+        <SsdlProperty
+          Name="RowVersion"
+          Nullable="True"
+          StoreGeneratedPattern="Computed"
+          Type="timestamp"
+          Property="StudentDocument/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="StudentsBrotherSisters">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="StudentsBrotherSister" />
+        <SsdlProperty
+          Name="ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="StudentsBrotherSister/Properties[ID]" />
+        <SsdlProperty
+          Name="StudentId"
+          Nullable="True"
+          Type="int"
+          Property="StudentsBrotherSister/Properties[StudentId]" />
+        <SsdlProperty
+          Name="BrotherSisterStudentCode"
+          Nullable="False"
+          Type="int"
+          Property="StudentsBrotherSister/Properties[BrotherSisterStudentCode]" />
+        <SsdlProperty
+          Name="GSlno"
+          Nullable="False"
+          Type="int"
+          Property="StudentsBrotherSister/Properties[GSlno]" />
+        <SsdlProperty
+          Name="InsertDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentsBrotherSister/Properties[InsertDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="InsertUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentsBrotherSister/Properties[InsertUser]" />
+        <SsdlProperty
+          Name="UpdateDate"
+          Nullable="True"
+          Type="datetime"
+          Property="StudentsBrotherSister/Properties[UpdateDate]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="UpdateUser"
+          Nullable="True"
+          Type="nvarchar"
+          Property="StudentsBrotherSister/Properties[UpdateUser]" />
+        <SsdlProperty
+          Name="RowVersion"
+          Nullable="True"
+          StoreGeneratedPattern="Computed"
+          Type="timestamp"
+          Property="StudentsBrotherSister/Properties[RowVersion]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
     <AssociationSetMapping
       AssociationSet="City_State">
       <AssociationSetMapping.Attributes>
@@ -4244,5 +6988,434 @@
         </SsdlAssociationSetEnd>
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_BloodGroups">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_BloodGroups" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_BloodGroups]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="BloodGroupCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_BloodGroups]/Members[BloodGroup]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_Nationalities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_Nationalities" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Nationalities]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="NationalityCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Nationalities]/Members[Nationality]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_MotherTongues">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_MotherTongues" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_MotherTongues]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="MotherTongueCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_MotherTongues]/Members[MotherTongue]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_Religions">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_Religions" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Religions]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ReligionCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Religions]/Members[Religion]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_Castes">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_Castes" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Castes]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="CasteCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Castes]/Members[Caste]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_ReservationCategories">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_ReservationCategories" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ReservationCategories]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ReservationCategoryCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ReservationCategories]/Members[ReservationCategory]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_ClassMasters">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_ClassMasters" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ClassMasters]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AdmittedClassCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ClassMasters]/Members[ClassMaster]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_ClassMaster1Set">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_ClassMaster1Set" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ClassMaster1Set]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="CurrentClassCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_ClassMaster1Set]/Members[ClassMaster]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_Cities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_Cities" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Cities]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PCityCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Cities]/Members[City]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_City1Set">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_City1Set" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_City1Set]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="CCityCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_City1Set]/Members[City]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Student_Occupations">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Student_Occupations" />
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Occupations]/Members[Student]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="FOccupationCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="EMSData/Members[Student_Occupations]/Members[Occupation]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
   </DataService>
+  <Association
+    Name="Student_BloodGroup">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="BloodGroup"
+      Multiplicity="One"
+      EntityType="BloodGroup">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_Nationality">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="Nationality"
+      Multiplicity="One"
+      EntityType="Nationality">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_MotherTongue">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="MotherTongue"
+      Multiplicity="One"
+      EntityType="MotherTongue">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_Religion">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="Religion"
+      Multiplicity="One"
+      EntityType="Religion">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_Caste">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="Caste"
+      Multiplicity="One"
+      EntityType="Caste">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_ReservationCategory">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="ReservationCategory"
+      Multiplicity="One"
+      EntityType="ReservationCategory">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_ClassMaster">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="ClassMaster"
+      Multiplicity="One"
+      EntityType="ClassMaster">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_ClassMaster1">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="ClassMaster"
+      Multiplicity="One"
+      EntityType="ClassMaster">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_City">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="City"
+      Multiplicity="One"
+      EntityType="City">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_City1">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="City"
+      Multiplicity="One"
+      EntityType="City">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="Student_Occupation">
+    <Association.Attributes>
+      <UserDefined />
+    </Association.Attributes>
+    <AssociationEnd
+      Name="Student"
+      Multiplicity="Many"
+      EntityType="Student" />
+    <AssociationEnd
+      Name="Occupation"
+      Multiplicity="One"
+      EntityType="Occupation">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
 </ModelFragment>

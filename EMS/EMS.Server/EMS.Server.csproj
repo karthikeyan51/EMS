@@ -203,6 +203,7 @@
     <Compile Include="UserCode\Shared\Country.cs" />
     <Compile Include="UserCode\Shared\Occupation.cs" />
     <Compile Include="UserCode\Shared\Religion.cs" />
+    <Compile Include="UserCode\Shared\Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <LightSwitchModel Include="Properties\Service.lsml">
